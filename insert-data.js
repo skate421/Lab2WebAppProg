@@ -1,8 +1,9 @@
+require('dotenv').config();
 const { MongoClient } = require("mongodb");
  
 // Replace the following with your Atlas connection string
 const uri =  
-  "<connection-string>";
+  process.env.MONGODB;
 
 const client = new MongoClient(uri);
                       
